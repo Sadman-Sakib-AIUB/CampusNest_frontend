@@ -43,7 +43,7 @@ export default function Login() {
         { withCredentials: true }
       );
 
-      router.push(`${process.env.NEXT_PUBLIC_URL}/dashboard`);
+      router.push("/dashboard");
     } catch (error: any) {
       const message = error.response?.data?.message || "Invalid Email and Password";
 
