@@ -23,7 +23,7 @@ export default function UpdateProfile({ initialData }: { initialData: any }) {
   const router = useRouter();
 
   // Merge top-level and teacher fields
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<Record<string, any>>({
     ...initialData.teacher,
     email: initialData.email,
   });
